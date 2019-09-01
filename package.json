@@ -1,0 +1,25 @@
+{
+  "name": "platzivideo",
+  "version": "1.0.0",
+  "description": "PlatziVideo Escuela JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "storybook": "start-storybook"
+  },
+  "keywords": [
+    "Platzi",
+    "Video",
+    "Html",
+    "CSS"
+  ],
+  "author": "Andres Valencia",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@storybook/html": "^5.1.11",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.3.0",
+    "eslint-plugin-react": "^7.14.3"
+  }
+}
