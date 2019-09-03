@@ -170,6 +170,7 @@ body{
     margin-right: 5px;    
     cursor: pointer;
     transition: 350ms all;
+    will-change: opacity;
     transform-origin: center left;
 }
 
@@ -240,4 +241,23 @@ body{
 
 .icon-play:before {
     content: "\e903";    
+}
+
+/* FOOTER */
+.footer{    
+    padding: 20px 10px;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.footer a{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: .9em;    
+}
+.footer a:hover{
+    text-decoration: underline;
 }

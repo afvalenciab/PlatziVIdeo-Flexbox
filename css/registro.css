@@ -1,0 +1,132 @@
+
+body{
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    color: #FFF;
+    background: linear-gradient(#21C08B, #8F57FD);
+}
+
+/* HEADER */
+.header{
+    height: 70px;    
+    padding: 15px;
+}
+
+.header__container-logo{
+    margin: 0;
+    display: inline-block;
+    height: inherit;
+}
+
+.header__container-logo img{
+    display: inline-block;
+    height: inherit;
+    vertical-align: top;        
+}
+
+/* LOGIN */
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: calc(100vh - 200px);
+}
+
+.sign-up__container{
+    background: rgba(256,256, 256,.1);
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 35px 15px 35px;
+    box-sizing: border-box;
+    font-size: 16px;    
+    box-shadow: 
+    0px 0px transparent,              /* top */
+    0 0 transparent,                  /* bottom */       
+    9px 0 7px -7px rgba(0,0,0,.3),  /* right */
+    -9px 0 7px -7px rgba(0,0,0,.3); /* left */
+    min-height: calc(100vh - 200px);    
+}
+
+.sign-up__container h2{
+    margin:0;
+    margin: 60px 0;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.sign-up__form{
+    width: inherit;    
+}
+
+.sign-up__form-input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    font-size: .8em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background-color: transparent;
+    padding: 10px;
+    color: #FFF;
+    font-family: 'Muli', sans-serif;
+}
+
+.sign-up__form-input::placeholder{
+    color: #FFF; 
+    font-weight: 100;    
+}
+
+.sign-up__form-button{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1em;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background: rgba(256,256,256,0.4);
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.8em;
+    font-family: 'Muli', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.sign-up__login{
+    margin: 0;
+    font-size: .8em;
+}
+
+.sign-up__login a{
+    font-size: 1.1em;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+.sign-up__login a:hover{
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer{    
+    padding: 20px 10px;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.footer a{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: .9em;    
+}
+.footer a:hover{
+    text-decoration: underline;
+}

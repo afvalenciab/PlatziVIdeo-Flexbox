@@ -65,7 +65,7 @@ body{
     width: 320px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px 15px 40px;
+    padding: 0 35px 15px 35px;
     box-sizing: border-box;
     font-size: 16px;    
     box-shadow: 
@@ -125,8 +125,13 @@ body{
 
 .login__container-options{
     display: flex;
-    justify-content: space-between;
-    font-size: .8em;
+    justify-content: space-between;    
+    font-size: 12.8px;    
+}
+
+.login__container-options input[type=checkbox]{
+    margin: 0;
+    vertical-align: middle;
 }
 
 .login__container-options a{
@@ -139,7 +144,7 @@ body{
 
 .login__social{
     margin: 50px 0;
-    font-size: .8em;
+    font-size: .9em;
 }
 .login__social-item{
     margin-bottom: 10px;
@@ -159,11 +164,13 @@ body{
 
 .login__register{
     margin: 0;
-    font-size: .8em;
+    font-size: .9em;
+    display: block;
+    width: 100%;
 }
 
 .login__register a{
-    font-size: 1.1em;
+    font-size: 1em;
     color: #FFF;
     text-decoration: none;
     font-weight: 600;
@@ -189,4 +196,80 @@ body{
 }
 .footer a:hover{
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 480px){
+    .header{
+        height: 50px;
+        padding: 15px;
+    }
+
+    .login{
+        min-height: calc(100vh - 170px);
+    }
+
+    .login__container{  
+        background: initial;
+        border: none;
+        border-radius: initial; 
+        width: 100%;                            
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px 10px 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        min-height: calc(100vh - 170px); 
+        box-shadow: initial;   
+    }
+
+    .login__container h2{
+        margin: 30px 0;                
+    }
+
+    .login__form-input{        
+        margin-bottom: 10px;                 
+        padding: 8px;        
+    }
+
+    .login__form-button{        
+        margin-bottom: 10px;
+        height: 35px;        
+        border-radius: 35px;                        
+    }
+    
+    .login__social{
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login__register{
+        text-align: center;
+    }
+
+    .footer{    
+        padding: 10px 0;
+        height: 100px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer a{
+        color: #FFF;
+        text-decoration: none;
+        margin: 0;
+        font-size: .8em;
+        padding: 5px 0; 
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    .login__container{
+        width: 320px;
+    }
 }
